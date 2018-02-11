@@ -1,0 +1,23 @@
+{
+  "name": "star-rating",
+  "version": "1.0.0",
+  "description": "front-end engineering take home",
+  "repository": "https://github.com/spoon16/star-rating",
+  "author": "Eric Schoonover <eric@spoon16.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-sass": "node-sass-chokidar ./app -o ./app",
+    "build-jsx": "babel ./app -d ./app",
+    "start": "npm-run-all build-sass build-jsx && http-server ./app"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "latest",
+    "babel-core": "latest",
+    "babel-preset-env": "latest",
+    "babel-preset-react": "latest",
+    "http-server": "latest",
+    "node-sass-chokidar": "latest",
+    "npm-run-all": "latest"
+  }
+}
