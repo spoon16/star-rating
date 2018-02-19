@@ -43,7 +43,7 @@ class Star extends React.Component {
 
      return [
         (<input key={id + "__input"} className="star-rating__input" type="radio" id={id} name={name} value={value} checked={checked} onChange={e => this.onChange(e)}></input>),
-        (<label key={id + "__label"} className="star-rating__label" htmlFor={id}></label>),
+        (<label key={id + "__label"} className={this.props.checked ? "star-rating__clicked" : "star-rating__label"} htmlFor={id}></label>),
      ];
   }
 }

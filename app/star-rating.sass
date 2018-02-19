@@ -17,6 +17,13 @@ h1
     direction: rtl
     border-width: 0px
 
+    .star-rating__clicked::before,
+    .star-rating__clicked ~ .star-rating__label:before
+        font-family: "Font Awesome 5 Free"
+        font-weight: 900
+        content: "\f005"
+        color: rgba(255, 255, 0, 100)
+
     .star-rating__label::before
         font-family: "Font Awesome 5 Free"
         font-weight: 400
