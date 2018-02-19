@@ -10,3 +10,14 @@ h1
 
 #app
    font-size: 3em
+   
+.star-rating
+    display: inline-block
+    unicode-bidi: bidi-override
+    direction: rtl
+    border-width: 0px
+
+    .star-rating__label::before
+        font-family: "Font Awesome 5 Free"
+        font-weight: 400
+        content: "\f005"
