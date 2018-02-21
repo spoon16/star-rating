@@ -31,7 +31,6 @@ class Star extends React.Component {
   onChange(e) {
      const rating = parseInt(e.target.value);
      this.props.onChange(rating);
-     console.log('shows checked is true on click', this);
   }
 
   render() {
